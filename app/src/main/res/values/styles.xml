@@ -1,0 +1,250 @@
+<resources
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="@style/MyAppTheme">
+
+    </style>
+
+    <style name="MyAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="BookDetailActivityTheme" parent="AppTheme">
+    </style>
+
+
+    <style name="ToastTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/toast_height</item>
+        <item name="android:layout_marginLeft">@dimen/toast_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/toast_horizontal_margin</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/toast_text_size</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+    <style name="ScanButton">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_gravity">right|center_vertical</item>
+        <item name="android:background">@drawable/scan_icon_gray</item>
+    </style>
+
+    <style name="MainSearchText" parent="@style/MatchWrap">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:drawableLeft">@drawable/search_icon</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:background">@drawable/search_edittext_shape</item>
+        <item name="android:textSize">@dimen/toolbar_text_size</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:inputType">text</item>
+        <item name="android:hint">@string/input_key_word</item>
+    </style>
+
+    <style name="NavigationOpenView" parent="@style/WrapWrap">
+        <item name="android:src">@drawable/nav_icon_menu</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="NavigationViewStyle" parent="@style/MatchMatch">
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_gravity">start</item>
+    </style>
+
+    <style name="BackToTopFloatingButton" parent="@style/WrapWrap">
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:layout_gravity">bottom|end</item>
+        <item name="android:src">@drawable/ic_back_to_top</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="ThemeCheckImageStyle">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/theme_icon_choose</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="ThemeConfirmButton" parent="@style/WrapWrap">
+        <item name="android:layout_gravity">end</item>
+        <item name="android:text">@string/sure</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/toolbar_search_text_size</item>
+    </style>
+
+    <style name="BookDetailContentTitle" parent="@style/MatchWrap">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/text_color_light_gray</item>
+    </style>
+
+    <style name="BookDetailContentText" parent="@style/WrapWrap">
+        <item name="android:lineSpacingExtra">5dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="BookDetailShowMore" parent="@style/WrapWrap">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+
+    <style name="BookDetailShrink" parent="@style/WrapWrap">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/book_detail_gray</item>
+        <item name="android:layout_marginRight">34dp</item>
+        <item name="android:text">@string/get_more</item>
+    </style>
+
+    <style name="BookDetailSpreadImage" parent="@style/WrapWrap">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@drawable/ic_details_more</item>
+    </style>
+
+    <style name="BookDetailShrinkImage" parent="@style/WrapWrap">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@drawable/ic_shrink_up</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!-- 加载滚动条样式 -->
+    <style name="PageLoading">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateDrawable">@drawable/page_progress_loading</item>
+        <item name="android:indeterminateDuration">1000</item>
+        <item name="android:indeterminateOnly">true</item>
+    </style>
+    <!-- 加载滚动条文字提示 -->
+    <style name="PageLoadingHint" parent="@style/WrapWrap">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:lines">2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/error_view_loading</item>
+        <item name="android:textColor">@color/book_detail_gray</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ToolBarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+
+    <style name="FiveRatingBarStyle" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/five_rating_bar</item>
+        <item name="android:minHeight">18dp</item>
+        <item name="android:maxHeight">18dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">12dp</item>
+        <item name="android:isIndicator">true</item>
+        <item name="android:numStars">5</item>
+    </style>
+
+    <style name="ThemeItemCardView" parent="@style/MatchWrap">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+    </style>
+
+    <style name="ThemeItemChooseIcon">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_gravity">bottom|right</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:src">@drawable/theme_icon_choose</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="SearchItemCardView" parent="@style/WrapWrap">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_margin">15dp</item>
+
+    </style>
+
+    <style name="SearchListBookTitleView" parent="@style/WrapWrap">
+        <item name="android:layout_marginTop">35dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:textColor">@color/text_title_deep_black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="SearchListBookAuthorView" parent="@style/WrapWrap">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/text_color_light_gray</item>
+    </style>
+
+    <style name="SearchListBookPublisherView" parent="@style/WrapWrap">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textColor">@color/text_color_light_gray</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="SearchTitleClearView" parent="@style/WrapWrap">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:src">@drawable/search_clear</item>
+        <item name="android:layout_gravity">right|center_vertical</item>
+    </style>
+
+    <style name="SearchTitleSearchView">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:src">@drawable/search_icon_transparent</item>
+        <item name="android:text">@string/cancel</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/toolbar_text_size</item>
+    </style>
+
+    <style name="SearchTitleEditView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/toolbar_search_text_size</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textColorHint">@color/text_color_hint</item>
+        <item name="android:hint">@string/input_key_word</item>
+    </style>
+
+    <style name="NavContentTextStyle" parent="@style/MatchMatch">
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+
+</resources>

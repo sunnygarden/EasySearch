@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatch"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/theme_toolbar"
+        style="@style/ToolBarStyle">
+        <TextView
+            android:id="@+id/theme_confirm"
+            style="@style/ThemeConfirmButton"
+            />
+    </android.support.v7.widget.Toolbar>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/theme_recycler"
+        style="@style/MatchMatch"/>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_overflow"
+        android:title="@string/menu_overflow_title"
+        app:showAsAction="always">
+        <menu>
+        <group>
+            <item
+                android:id="@+id/show_album"
+                android:title="@string/menu_overflow_title"
+                app:showAsAction="always"/>
+
+        </group>
+        </menu>
+    </item>
+</menu>

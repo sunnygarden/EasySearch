@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap"
+    android:orientation="horizontal">
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        android:layout_marginTop="3dp"
+        style="@style/FiveRatingBarStyle"
+        />
+
+    <TextView
+        android:id="@+id/rating_describe"
+        style="@style/WrapWrap"
+        android:textSize="@dimen/rating_describe_text_size" />
+</LinearLayout>

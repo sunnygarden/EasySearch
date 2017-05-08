@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch"
+    android:orientation="vertical">
+    <RelativeLayout
+        style="@style/MatchMatch">
+        <android.support.design.widget.CoordinatorLayout
+            style="@style/MatchMatch">
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipe_refresh"
+                style="@style/MatchMatch"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    style="@style/MatchMatch"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    />
+            </android.support.v4.widget.SwipeRefreshLayout>
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                app:backgroundTint="@color/colorPrimary"
+                style="@style/BackToTopFloatingButton"
+                />
+        </android.support.design.widget.CoordinatorLayout>
+        <com.wkui.douban.easysearch.view.EmptyLayout
+            android:id="@+id/empty_view"
+            style="@style/MatchMatch"
+            />
+    </RelativeLayout>
+</LinearLayout>

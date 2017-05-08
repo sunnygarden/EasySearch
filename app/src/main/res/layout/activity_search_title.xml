@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/search_view"
+        android:background="@color/colorPrimary"
+        style="@style/MatchWrap"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/WrapWrap"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_action_arrow_light_back"
+            android:id="@+id/search_back_image_view" />
+
+        <EditText
+            android:id="@+id/search_et_input"
+            style="@style/SearchTitleEditView"
+            />
+
+        <ImageView
+            android:id="@+id/search_iv_delete"
+            style="@style/SearchTitleClearView"
+            />
+        <ImageView
+            android:id="@+id/search_image"
+            style="@style/SearchTitleSearchView"
+            />
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">EasySearch</string>
+    <!-- Detail View -->
+    <string name="summary">Summary</string>
+    <string name="author_summary">Author Summary</string>
+    <string name="catalog">Catalog</string>
+    <string name="review">Review</string>
+    <string name="rate_people_count"><xliff:g id="number">%1$d</xliff:g>people</string>
+    <string name="book_author">Author:<xliff:g id="author">%1$s</xliff:g></string>
+    <string name="book_publisher">Publisher:<xliff:g id="name">%1$s</xliff:g></string>
+    <string name="book_publisher_time">Publisher Date:<xliff:g id="date">%1$s</xliff:g></string>
+    <string name="rate_describe_count"><xliff:g id="number">%1$s</xliff:g>point</string>
+    <string name="not_enough_comment_people">few people comment</string>
+    <string name="unKnow_author">Unknown</string>
+    <string name="get_more">Get More</string>
+    <string name="shrink_up">Shrink Up</string>
+
+    <!-- Loading View -->
+    <string name="error_view_click_to_refresh">Click to refresh</string>
+    <string name="error_view_no_data">No data</string>
+    <string name="error_view_loading">Loading...</string>
+    <string name="error_view_load_error_click_to_refresh">Load error\r\nclick to Refredh</string>
+    <string name="error_view_network_error_click_to_refresh">Network Error,click to refresh</string>
+    <string name="tip_network_error">Network Error</string>
+
+    <!--Search view-->
+    <string name="book_search">Search</string>
+    <string name="input_key_word">Please input the key words</string>
+    <string name="search_book_count">total<xliff:g id="number">%1$d</xliff:g>books</string>
+
+    <!--Scan view-->
+    <string name="scan_search_hint">Target the code, automatic scanning</string>
+    <string name="scan_search_title">book code</string>
+    <string name="format_not_support">Format not support</string>
+    <string name="menu_overflow_title">Open from the album</string>
+    <string name="cancel">Cancel</string>
+
+    <!--Navigation Menu view-->
+    <string name="nav_menu_home">Home</string>
+    <string name="nav_menu_theme">Theme</string>
+    <string name="nav_menu_setting">Setting</string>
+    <string name="nav_menu_about">About</string>
+    <string name="nav_menu_theme_title">Theme Color</string>
+    <string name="nav_menu_about_text">项目说明：\n
+        豆瓣服务器针对单个ip的请求数限制为40次/分钟，
+        由于项目未做访问次数限制，因此若某段时间内频繁刷新，ip会被暂时封禁，需等待一段时间才能重新访问。
+    </string>
+    <string name="nav_menu_home_text">
+        项目介绍:\n
+        1、主要功能有：图书的分类展示、书籍详情、图书名关键字查询、条形码扫描查询\n\n
+        2、主要用到的第三方开源框架有：\n
+        (1)图片加载框架Glide\n
+        (2)网络访问框架Retrofit\n
+        (3)二维码扫描框架BGAQRCode\n
+        (4)注解框架ButterKnife\n\n
+        3、界面主要采用的是Material Design风格的控件，如AppBarLayout、ToolBar、CoordinatorLayout等\n
+        其中CardView用于包裹图书的显示来增加圆角和阴影功能、
+        DrawerLayout实现抽屉效果、NavigationView实现抽屉布局、RecyclerView用于显示大量图书数据、
+        CollapsingToolbarLayout实现可伸缩折叠的toolbar,主要应用在书籍详情页、TabLayout加上viewPager实现可横向切换的选项卡、FloatingActionButton实现回到顶部按钮等\n\n
+        4、代码编写采用mvp架构，代码进行了混淆,apk进行了安全加固
+    </string>
+
+    <string name="toast_quit_hint">Another touch to quit</string>
+    <string name="sure">Sure</string>
+    <string name="toast_click_hint">You clicked setting</string>
+
+    <!--Recycler loading view-->
+    <string name="is_loading_more">Loading more...</string>
+    <string name="pull_to_load_more">Pull to load more</string>
+
+
+</resources>

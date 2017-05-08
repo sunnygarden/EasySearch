@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_catalog_layout"
+    android:visibility="gone"
+    android:orientation="vertical"
+    style="@style/MatchMatch">
+    <TextView
+        android:text="@string/catalog"
+        style="@style/BookDetailContentTitle"/>
+    <TextView
+        android:id="@+id/book_content_text_catalog"
+        style="@style/BookDetailContentText"/>
+    <!-- 更多和箭头 -->
+    <RelativeLayout
+        android:id="@+id/show_more_catalog"
+        style="@style/BookDetailShowMore"
+        >
+
+        <TextView
+            android:id="@+id/more_shrink_content_catalog"
+            style="@style/BookDetailShrink"/>
+
+
+        <ImageView
+            android:id="@+id/spread_catalog"
+            style="@style/BookDetailSpreadImage" />
+
+        <ImageView
+            android:id="@+id/shrink_up_catalog"
+            style="@style/BookDetailShrinkImage"/>
+    </RelativeLayout>
+</LinearLayout>

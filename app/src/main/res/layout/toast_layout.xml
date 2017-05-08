@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_quit_layout"
+    style="@style/MatchMatch"
+    >
+    <TextView
+        android:id="@+id/toast_text"
+        style="@style/ToastTextStyle"
+        />
+</LinearLayout>

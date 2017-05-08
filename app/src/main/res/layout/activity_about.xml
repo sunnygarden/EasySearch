@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/nav_about_toolbar"
+        style="@style/ToolBarStyle"/>
+    <android.support.v7.widget.CardView
+        style="@style/MatchWrap"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="5dp">
+        <TextView
+            android:id="@+id/nav_about_text"
+            style="@style/NavContentTextStyle"
+            />
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
